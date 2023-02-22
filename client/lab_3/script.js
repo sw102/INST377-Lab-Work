@@ -48,3 +48,5 @@ document.querySelector('.prev') // Get the appropriate element (<button class="n
     console.log('clicked prev'); // let's tell the client console we made it to this point in the script
     moveToPrevSlide(); // call the function above to handle this
   });
+
+  //test
