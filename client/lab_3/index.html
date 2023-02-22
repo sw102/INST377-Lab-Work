@@ -1,5 +1,46 @@
-<!--
-    Replace this with your working code from Lab 2, and include:
-    - The styles in this folder's `style.css`
-    - The script in script.js, which should be included via a `<script src="script.js" >` call before your closing </body> tag 
--->
+
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nicholas Azarm's Lab 2 for INST377</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="wrapper">
+    <header class="header h1"><h1>Nicholas Azarm's Lab 3 for INST377</h1></header> 
+    <div class="container">
+      <div class="left_section box">
+        <h2>Album Names</h2>
+        <ol class="box">
+            <li>Illmatic - Nas</li>
+            <li>If This Isn't Nice, I Don't Know What Is - Still Woozy</li>
+            <li>Curtain Call - Eminem</li>
+            <li>DAMN - Kendrick Lamar</li>
+            <li>Savage Mode II - 21 Savage</li>
+        </ol>
+      </div>
+      <div class="right_section box">
+        <h2>Image Carousel</h2>
+        <div class="carousel">
+            <button class="prev">prev</button>
+            <div class="slides">
+                <div class="carousel_item visible"><img id="slide1" src="./images/Cartier_Bass_PFP.png" alt="Cartier Bass PFP"></div>
+                <div class="carousel_item hidden"><img id="slide2" src="./images/Holiday_Will_PFP.png" alt="Holiday Will PFP"></div>
+                <div class="carousel_item hidden"><img id="slide3" src="./images/SW_PFP.png" alt="SW PFP"></div>
+                <div class="carousel_item hidden"><img id="slide4" src="./images/Yuhhh_PFP.png" alt="Yuhhh PFP"></div>
+            </div>
+            <button class="next">next</button>
+        </div>
+        <div class="box">My Friends Discord Profile Pictures</div>
+      </div>
+  </div>
+  <footer class="footer a:hover">
+    My GitHub Account Name:
+    <a href="https://github.com/sw102" target="_blank">sw102</a>
+  </footer>
+  <script src="script.js" ></script>
+</body>
+</html>
