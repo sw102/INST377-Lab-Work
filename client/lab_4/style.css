@@ -39,7 +39,7 @@ a {
   text-decoration: none;
 }
 
-h2 {
+h2, h3 {
   margin:0;
   padding:0;
   padding-bottom:1.5rem;
@@ -92,7 +92,7 @@ form {
   /* this will push other blocks out of the way */
 
   /* colors */
-  background-color: #ffe08a;
+  background-color: #73EEDC;
   color: #4a4a4a;
 
   /* shapes */
@@ -117,7 +117,7 @@ form {
 */
 
 .box {
-  background-color: rgba(239, 239, 239, 0.40);
+  background-color: rgba(52, 228, 17, 0.742);
   border: 2px dashed;
   border-radius: 4px;
 
@@ -128,18 +128,20 @@ form {
 }
 
 .left_section {
-  background-color: rgba(0, 139, 139, 0.8);
+  background-color: rgba(162, 0, 255, 0.8);
   flex: 0 1 auto;
   margin: 1rem;
   padding: 1.5rem;
 }
 
 .right_section {
-  background-color: rgba(255, 224, 138, 0.7);
+  background-color: rgba(255, 243, 12, 0.7);
   flex: 1 2 auto;
   margin: 1rem;
   align-items: center;
-  max-width: 450px;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
 }
 
 /*
@@ -151,13 +153,17 @@ form {
 .footer {
   flex-shrink: 0;
   padding: 1rem;
-  background-color: rgba(0, 139, 139, 0.8);
+  background-color: rgba(255, 0, 0, 0.8);
   font-size: 1.2rem;
   font-weight: 600;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
 }
 
-.footer a {
-  color: rgba(255, 224, 138, 1);
+.footer a { 
+  color: rgb(231, 9, 142);
   text-decoration: underline;
 }
 
@@ -168,9 +174,9 @@ form {
 */
 .footer a:hover {
   /* Hue, saturation, luminosity, alpha */
-  background-color: hsla(0, 0%, 90%, 0.15);
+  background-color: hsla(0, 0%, 95%, 0.15);
   /* red, green, blue, alpha */
-  color: rgb(246, 169, 93);
+  color: rgb(79, 23, 235);
   text-decoration: none;
 }
 
@@ -301,5 +307,10 @@ form label {
     /* check it out by using your developer tools to shrink your screen-size */
     .container {
       background-color: rgba(204, 8, 162, 0.65);
+      flex-direction: column;
+      align-items: center;
+    }
+    .right_section {
+      align-items: flex-start;
     }
 }
